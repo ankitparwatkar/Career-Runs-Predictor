@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+<title>Runs Predictor</title>
+
+<style>
+
+body{
+background-image: url("../static/116316-abstract-cyan-defocused-background-design.jpg");
+Background-size: cover;
+}
+
+form{
+text-align: center
+}
+
+input{
+width: 25%
+}
+
+input[type=submit]{
+	background-color: green;
+	color: white;
+	width: 10%
+}
+
+label {
+	font-size: 20px;
+	display: inline_block;
+	width: 150px;
+	text-align: right;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<center><h1>Runs Predictor</h1></center>
+
+<form action='/predict' method="post">
+
+<label for = "HS">Highest Score</label>
+<input type = 'number', name = 'HS', required = 'required'>
+
+<br></br>
+
+<label for = "AVE">Average</label>
+<input type = 'number', name = 'AVE', required = 'required'>
+
+<br></br>
+
+<label for = "BF">Balls Faced</label>
+<input type = 'number', name = 'BF', required = 'required'>
+
+<br></br>
+
+<label for = "SR">Strike Rate</label>
+<input type = 'number', name = 'SR', required = 'required'>
+
+<br></br>
+
+<label></label>
+<input id = "submit" type = "submit" value = "Batsman Career Runs" ></input>
+
+</form>
+<center><h3>{{Runs}}</h3></center>
+</body>
+
+</html>
